@@ -10,7 +10,7 @@ require 'faker'
 10.times do
   Article.create(
     title: Faker::JapaneseMedia::DragonBall.character,
-    content: Faker::Lorem.sentence(word_count: 3)
+    content: Faker::Lorem.sentence(word_count: 25)
   )
 end
 puts "10 articles created"

@@ -13,3 +13,27 @@
  *= require_tree .
  *= require_self
  */
+
+a {
+  text-decoration: none;
+  color: #3279B7;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #174c7a;
+}
+
+.container {
+  width: 700px;
+}
+
+.inner-fonts {
+  color: #333;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.lead {
+  font-size: 1.2em;
+}

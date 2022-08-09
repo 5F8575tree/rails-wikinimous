@@ -1,5 +1,14 @@
 <div class="cards">
   <% @articles.each do |article| %>
-    <%= link_to article.title, article_path(article) %>
+    <div class="card mt-2">
+      <div class="card-body">
+        <div class="card-title fs-3 blue">
+          <%= link_to article.title, article_path(article) %>
+        </div>
+        <div class="card-subtitle mb-2 text-muted fs-6">
+          <%= article.content %>
+        </div>
+      </div>
+    </div>
   <% end %>
 </div>

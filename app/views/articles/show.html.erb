@@ -1,2 +1,10 @@
-<h1>Articles#show</h1>
-<p>Find me in app/views/articles/show.html.erb</p>
+<h1 class="mt-4 display-4 inner-fonts"><%= @article.title %></h1>
+<%# Edit %>
+<%# Delete %>
+<hr>
+<p class="lead"><%= @article.content %></p>
+<h3 class="display-6 inner-fonts"><%= @article.title * 3 %></h3>
+<p class="lead"><%= @article.content * 4 %></p>
+
+<h3 class="display-6 inner-fonts"><%= @article.title * 4 %></h3>
+<p class="lead"><%= @article.content * 8 %></p>
