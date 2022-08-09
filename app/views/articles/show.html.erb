@@ -1,6 +1,10 @@
 <h1 class="mt-4 display-4 inner-fonts"><%= @article.title %></h1>
-<%# Edit %>
-<%# Delete %>
+<%= link_to edit_article_path(@article), class: 'btn' do %>
+  <i class="fa-solid fa-pencil"></i>
+<% end %>
+<%= link_to edit_article_path(@article), class: 'btn' do%>
+  <i class="fa-solid fa-trash-can"></i>
+<% end %>
 <hr>
 <p class="lead"><%= @article.content %></p>
 <h3 class="display-6 inner-fonts"><%= @article.title * 3 %></h3>
